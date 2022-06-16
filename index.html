@@ -5,28 +5,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
-    <link rel="stylesheet" href="/bg.css" />
+    <!-- <link rel="stylesheet" href="/bg.css" type="text/css" /> -->
     <style>
       h1 {
         color: aqua;
       }
-      #name {
-        color: rgb(13, 114, 57);
-        background-color: yellow;
+      *{
+        /* background-color:yellow; */
+
       }
-    
+ul{
+  display: flex;
+  flex-direction:row;
+  /* flex-wrap: wrap-reverse; */
+
+  /* justify-content: center;   */
+  background-color:black;
+  
+}
+      #navbar{
+        background-color:white;
+        position: relative;
+        margin : 10px;
+        border : 2px solid black;
+width: 100%;
+text-align: center;
+line-height: 75px;
+  font-size: 30px;
+
+        /* padding :10px; */
+      }
+
+
     </style>
   </head>
   <body>
-    <nav>
-      <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/">Project</a></li>
-        <li><a href="/">Contect me</a></li>
-        <li><a href="/">About me</a></li>
+    <nav >
+      <ul style="list-style-type: none">
+       <div id = "navbar"> <li><a href="#home">Home</a></li></div>
+        <div id = "navbar"><li><a href="#proj">Skill Set</a></li></div>
+        <div id = "navbar"><li><a href="#Contact">Contect me</a></li></div>
+       <div id = "navbar"> <li><a href="#about">About me</a></li></div>
       </ul>
     </nav>
-    <div>
+    <div id="home">
       <div>
         <h1 id="name">Harit Rajkotiya</h1>
         <p>
@@ -46,7 +68,17 @@
           fugit!
         </p>
       </div>
-      <div>
+<div id ="skill">
+  <div id = "edu">
+
+  </div>
+  <div id="Contact">
+
+  </div>
+  <div id="about"></div>
+
+</div>
+      <div id = "proj">
         <div style="background-color: grey">
           <h2>Python</h2>
           <p>
@@ -70,7 +102,7 @@
         </div>
       </div>
       <!-- Form Starts here -->
-      <div>
+      <div id=>
         <form>
           <label>Name : </label>
           <input type="text" />
